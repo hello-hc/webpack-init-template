@@ -1,0 +1,38 @@
+{
+  "git.ignoreLimitWarning": true,
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": "./.eslintrc.js",
+    "extensions": [".js", ".jsx"]
+  },
+  "eslint.nodePath": "./node_moudles",
+  // Set the default
+  "editor.formatOnSave": false,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/*-build": true
+  },
+  // "prettier.disableLanguages": ["javascript", "javascriptreact", "vue"],
+  "javascript.format.enable": true,
+  "prettier.singleQuote": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  // trim trailing whitespace when saving a file.
+  "files.trimTrailingWhitespace": true, // // overridden .editorconfig
+  // insert a final new line at the end of the file when saving it.
+  "files.insertFinalNewline": true, // // overridden .editorconfig
+  // will trim all new lines after the final new line at the end of the file when saving it.
+  "files.trimFinalNewlines": true,
+  "files.autoSave": "onWindowChange",
+}
