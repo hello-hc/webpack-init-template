@@ -1,5 +1,5 @@
 const path = require("path");
-const webpack = require("webpack");
+// const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // 用于将 CSS 从主应用程序中分离
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -9,7 +9,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 // const {NODE_ENV} = process.env;
 
 const ROOT_PATH = path.resolve(__dirname, "..");
-const SOURCE_PATH = path.resolve(ROOT_PATH, "src");
+// const SOURCE_PATH = path.resolve(ROOT_PATH, "src");
 const PUBLIC_PATH = path.resolve(ROOT_PATH, "public");
 const OUTPUT_PATH = path.resolve(ROOT_PATH, "dist");
 

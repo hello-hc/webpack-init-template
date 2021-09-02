@@ -97,7 +97,7 @@ export default App;
 
 ````html
 <!-- public/ -->
-<!-- index.html --> 
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -179,7 +179,7 @@ module.exports = {
         }
       }
     ]
-  }  
+  }
 }
 ````
 
@@ -264,7 +264,7 @@ console.log(CryptoJs.MD5('hello').toString()); // hash 值
 // webpack配置
 resolve: {
   fallback: {
-    // 不需要polyfill 
+    // 不需要polyfill
     "crypto": false,
     "buffer": false,
     "stream": false,
@@ -365,13 +365,13 @@ Module Federation
 - 使用 Module Federation 时，每个应用块都是一个独立的构建，这些构建都将编译为容器
 - 容器可以被其他应用或者其他容器应用
 - 一个被引用的容器被称为 remote ，引用者被称为 host，remote 暴露模块给 host，host则可以使用这些暴露的模块，这些模块被称为 remote 模块
-  
+
+````jsx
     Host    Remote     Host    Remote
-  应用 -------------> 容器 -------------> 容器 
-  ｜                 ｜                 ｜ 
+  应用 -------------> 容器 -------------> 容器
+  ｜                 ｜                 ｜
   ｜<------------- 独立构建 ------------>｜
-
-
+````
 
 参数配置：
 
@@ -483,18 +483,3 @@ module.exports = {
 // host/src/index.js
 
 ````
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
